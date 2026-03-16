@@ -12,20 +12,5 @@ namespace NotMerger.Core.Model
         public ModuleSnapshot? CurrentVersion { get; set; }
         public ModuleSnapshot? NextVersion { get; set; }
         public ModuleSnapshot? Project { get; set; }
-
-
-
-        protected virtual void Load(MergeConfig config)
-        {
-
-        }
-
-        public static MergeContext Create(MergeConfig config)
-        {
-            var ctx = new MergeContext();
-
-            return ctx;
-        }
-
     }
 }
